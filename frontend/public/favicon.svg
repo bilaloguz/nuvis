@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded square background matching login icon -->
+  <rect x="12" y="12" width="96" height="96" rx="20" ry="20" fill="url(#g)" stroke="rgba(255,255,255,0.2)" stroke-width="3"/>
+  <!-- Terminal glyph: >_ -->
+  <path d="M36 60 L52 48 M36 60 L52 72" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="62" y1="72" x2="86" y2="72" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+</svg>
+
+
+
+
+
+
+

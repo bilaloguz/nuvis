@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
+  <defs>
+    <linearGradient id="penGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#50fa7b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#69db7c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Icon -->
+  <g transform="translate(10, 10)">
+    <!-- Pen body -->
+    <path d="M8 20 L12 16 L16 20 L20 16 L24 20 L20 24 L16 20 L12 24 L8 20 Z" 
+          fill="url(#penGradient)" stroke="#1e1e1e" stroke-width="0.5"/>
+    
+    <!-- Pen tip -->
+    <path d="M20 16 L24 12 L26 14 L22 18 Z" fill="url(#penGradient)"/>
+    
+    <!-- Ink drops -->
+    <circle cx="10" cy="22" r="1" fill="#ff6b6b" opacity="0.8"/>
+    <circle cx="14" cy="26" r="0.8" fill="#ff6b6b" opacity="0.6"/>
+    <circle cx="18" cy="24" r="0.6" fill="#ff6b6b" opacity="0.4"/>
+  </g>
+  
+  <!-- Text "biRun" -->
+  <text x="50" y="35" font-family="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" 
+        font-size="24" font-weight="600" fill="#50fa7b">
+    biRun
+  </text>
+  
+  <!-- Tagline -->
+  <text x="50" y="50" font-family="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" 
+        font-size="10" fill="#8b8b8b" opacity="0.7">
+    Script Management by biRun
+  </text>
+</svg>
+
+
+
+
+
+
+

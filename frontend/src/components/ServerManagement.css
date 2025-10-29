@@ -1,0 +1,146 @@
+/* Server Management Button Styles */
+
+.server-actions .btn {
+  transition: all 0.2s ease-in-out;
+  border-width: 2px;
+  font-weight: 500;
+}
+
+.server-actions .btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.server-actions .btn-outline-primary:hover {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: white;
+}
+
+.server-actions .btn-outline-danger:hover {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: white;
+}
+
+.server-actions .btn-outline-info:hover {
+  background-color: #0dcaf0;
+  border-color: #0dcaf0;
+  color: white;
+}
+
+.server-actions .btn:disabled {
+  opacity: 0.6;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Vertical divider styling */
+.server-actions .vr {
+  background-color: #dee2e6;
+  opacity: 0.5;
+}
+
+/* Connection status badges */
+.connection-status-badge {
+  cursor: help;
+  transition: all 0.2s ease-in-out;
+}
+
+.connection-status-badge:hover {
+  transform: scale(1.05);
+}
+
+/* Table row hover effects */
+.table-hover tbody tr:hover {
+  background-color: rgba(13, 110, 253, 0.05) !important;
+}
+
+/* Button group spacing */
+.server-actions {
+  gap: 0.5rem;
+}
+
+/* Responsive button sizing */
+@media (max-width: 768px) {
+  .server-actions .btn {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .server-actions .btn i {
+    margin-right: 0.25rem !important;
+  }
+}
+
+/* Draggable Terminal Modal Styles */
+.terminal-modal .modal-dialog {
+  transition: none !important; /* Disable Bootstrap transitions for smooth dragging */
+}
+
+.terminal-modal .modal-header {
+  transition: background-color 0.2s ease;
+}
+
+.terminal-modal .modal-header:hover {
+  background-color: #3d3d3d !important;
+}
+
+.terminal-modal .modal-header:active {
+  background-color: #4d4d4d !important;
+}
+
+/* Drag handle icon styling */
+.terminal-modal .bi-grip-vertical {
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.terminal-modal .modal-header:hover .bi-grip-vertical {
+  opacity: 1;
+}
+
+/* Prevent text selection during drag */
+.terminal-modal .modal-header * {
+  pointer-events: none;
+}
+
+.terminal-modal .modal-header .btn-close {
+  pointer-events: auto;
+}
+
+/* Smooth cursor transitions */
+.terminal-modal .modal-header {
+  cursor: grab;
+}
+
+.terminal-modal .modal-header:active {
+  cursor: grabbing;
+}
+
+/* Modal shadow and border effects */
+.terminal-modal .modal-content {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid #444;
+}
+
+/* Responsive modal positioning */
+@media (max-width: 1200px) {
+  .terminal-modal .modal-dialog {
+    max-width: 95vw !important;
+    max-height: 95vh !important;
+  }
+}
+
+/* OS Column Centering */
+.os-column {
+  text-align: center !important;
+  vertical-align: middle !important;
+  width: 80px !important;
+}
+
+.os-icon {
+  font-size: 2em !important;
+  display: inline-block !important;
+  margin: 0 auto !important;
+}

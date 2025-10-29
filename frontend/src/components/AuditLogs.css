@@ -1,0 +1,262 @@
+/* Audit Logs Component Styles */
+
+.audit-logs-container {
+  background-color: var(--bg-secondary);
+}
+
+.audit-log-row {
+  transition: background-color 0.2s ease;
+}
+
+.audit-log-row:hover {
+  background-color: rgba(80, 250, 123, 0.05) !important;
+}
+
+.audit-action-icon {
+  font-size: 1.1em;
+}
+
+.audit-resource-badge {
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.audit-details-button {
+  font-size: 0.8em;
+  padding: 0.25rem 0.5rem;
+}
+
+.audit-filters-card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.audit-filters-card .card-title {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.audit-table-container {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.audit-table-container .card-title {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.audit-pagination .page-link {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.audit-pagination .page-link:hover {
+  background-color: var(--bg-tertiary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.audit-pagination .page-item.active .page-link {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+.audit-pagination .page-item.disabled .page-link {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-color);
+  color: var(--text-muted);
+}
+
+/* Filter form styles */
+.audit-filters-card .form-label {
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+.audit-filters-card .form-select,
+.audit-filters-card .form-control {
+  background-color: var(--bg-tertiary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.audit-filters-card .form-select:focus,
+.audit-filters-card .form-control:focus {
+  background-color: var(--bg-tertiary);
+  border-color: var(--primary-color);
+  color: var(--text-primary);
+  box-shadow: 0 0 0 0.2rem rgba(80, 250, 123, 0.25);
+}
+
+/* Table styles */
+.audit-table-container .table {
+  color: var(--text-primary);
+}
+
+.audit-table-container .table thead th {
+  background-color: var(--bg-tertiary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.audit-table-container .table tbody td {
+  border-color: var(--border-color);
+  vertical-align: middle;
+}
+
+.audit-table-container .table tbody tr:hover {
+  background-color: rgba(80, 250, 123, 0.05);
+}
+
+/* Badge styles */
+.audit-user-badge {
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.audit-status-badge {
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+/* Fix text color issues for specific table elements - More specific and forceful */
+.audit-table-container .table tbody td small.text-muted {
+  color: white !important;
+}
+
+.audit-table-container .table tbody td .badge.bg-info {
+  color: white !important;
+}
+
+.audit-table-container .table tbody td .text-muted {
+  color: white !important;
+}
+
+/* Force white color for IP address and other text - Multiple selectors for maximum specificity */
+.audit-table-container .table tbody td small,
+.audit-table-container .table tbody td .text-muted,
+.audit-table-container .table tbody td small.text-muted,
+.audit-table-container .table tbody td span.text-muted {
+  color: white !important;
+}
+
+/* Override Bootstrap's text-muted class completely */
+.text-muted {
+  color: white !important;
+}
+
+/* Force all text in audit table to be white */
+.audit-table-container .table tbody td,
+.audit-table-container .table tbody td *,
+.audit-table-container .table tbody td small,
+.audit-table-container .table tbody td span {
+  color: white !important;
+}
+
+/* Nuclear option - override everything with maximum specificity */
+.audit-table-container .table tbody td small.text-muted,
+.audit-table-container .table tbody td span.text-muted,
+.audit-table-container .table tbody td .text-muted,
+.audit-table-container .table tbody td small,
+.audit-table-container .table tbody td span {
+  color: white !important;
+  color: white !important;
+  color: white !important;
+}
+
+/* Global override for text-muted class */
+body .text-muted,
+.table .text-muted,
+td .text-muted,
+small.text-muted,
+span.text-muted {
+  color: white !important;
+}
+
+/* Ensure all text in table cells is visible */
+.audit-table-container .table tbody td {
+  color: var(--text-primary, #ffffff) !important;
+}
+
+.audit-table-container .table tbody td * {
+  color: inherit;
+}
+
+/* Accordion-style details expansion */
+.audit-details-row {
+  background-color: var(--bg-tertiary);
+  border-top: none;
+}
+
+.audit-details-content {
+  background-color: var(--bg-tertiary);
+  border-left: 3px solid var(--primary-color);
+  margin-left: 1rem;
+}
+
+.audit-details-content h6 {
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.audit-details-json {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 1rem;
+  color: var(--text-primary);
+  font-size: 0.85em;
+  line-height: 1.4;
+  max-height: 300px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.audit-details-json::-webkit-scrollbar {
+  width: 8px;
+}
+
+.audit-details-json::-webkit-scrollbar-track {
+  background-color: var(--bg-secondary);
+}
+
+.audit-details-json::-webkit-scrollbar-thumb {
+  background-color: var(--border-color);
+  border-radius: 4px;
+}
+
+.audit-details-json::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .audit-filters-card .row {
+    margin: 0;
+  }
+  
+  .audit-filters-card .col-md-2 {
+    margin-bottom: 1rem;
+  }
+  
+  .audit-table-container .table-responsive {
+    font-size: 0.9em;
+  }
+  
+  .audit-details-content {
+    margin-left: 0.5rem;
+  }
+  
+  .audit-details-json {
+    font-size: 0.8em;
+    padding: 0.75rem;
+  }
+}

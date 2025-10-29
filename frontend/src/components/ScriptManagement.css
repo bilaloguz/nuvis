@@ -1,0 +1,259 @@
+/* Script Management Styles */
+
+.script-management {
+  background-color: var(--bg-card);
+  color: #ffffff;
+}
+
+/* Script type badges */
+.badge.bg-info {
+  background-color: #0dcaf0 !important;
+  color: #000 !important;
+}
+
+/* Category badges with custom colors */
+.badge[style*="background-color: #6b7280"] {
+  background-color: #6b7280 !important;
+}
+
+.badge[style*="background-color: #10b981"] {
+  background-color: #10b981 !important;
+}
+
+.badge[style*="background-color: #f59e0b"] {
+  background-color: #f59e0b !important;
+}
+
+.badge[style*="background-color: #3b82f6"] {
+  background-color: #3b82f6 !important;
+}
+
+.badge[style*="background-color: #8b5cf6"] {
+  background-color: #8b5cf6 !important;
+}
+
+.badge[style*="background-color: #ef4444"] {
+  background-color: #ef4444 !important;
+}
+
+/* Script content editor */
+#scriptContent,
+#newScriptContent {
+  background-color: #1e1e1e !important;
+  color: #f8f8f2 !important;
+  border-color: #444 !important;
+}
+
+#scriptContent:focus,
+#newScriptContent:focus {
+  background-color: #1e1e1e !important;
+  color: #f8f8f2 !important;
+  border-color: #0d6efd !important;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25) !important;
+}
+
+/* Parameters textarea */
+#scriptParameters,
+#newScriptParameters {
+  background-color: #1e1e1e !important;
+  color: #f8f8f2 !important;
+  border-color: #444 !important;
+}
+
+#scriptParameters:focus,
+#newScriptParameters:focus {
+  background-color: #1e1e1e !important;
+  color: #f8f8f2 !important;
+  border-color: #0d6efd !important;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25) !important;
+}
+
+/* Table styling */
+.table {
+  background-color: var(--bg-card);
+  color: #ffffff;
+}
+
+.table thead th {
+  background-color: var(--bg-secondary);
+  border-color: #444;
+  color: #ffffff;
+}
+
+.table tbody tr {
+  background-color: var(--bg-card);
+  color: #ffffff;
+}
+
+.table tbody tr:hover {
+  background-color: #2d2d2d !important;
+}
+
+.table td {
+  border-color: #444;
+  color: #ffffff;
+}
+
+/* Modal styling */
+.modal-content {
+  background-color: var(--bg-card);
+  color: #ffffff;
+  border-color: #444;
+}
+
+.modal-header {
+  background-color: var(--bg-secondary);
+  border-bottom-color: #444;
+}
+
+.modal-footer {
+  background-color: var(--bg-secondary);
+  border-top-color: #444;
+}
+
+/* Form controls */
+.form-control {
+  background-color: var(--bg-tertiary);
+  border-color: #444;
+  color: #ffffff;
+}
+
+.form-control:focus {
+  background-color: var(--bg-tertiary);
+  color: #ffffff;
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.form-select {
+  background-color: var(--bg-tertiary);
+  border-color: #444;
+  color: #ffffff;
+}
+
+.form-select:focus {
+  background-color: var(--bg-tertiary);
+  color: #ffffff;
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Form labels */
+.form-label {
+  color: #ffffff;
+}
+
+.form-text {
+  color: #a0a0a0;
+}
+
+/* Button styling */
+.btn-outline-primary:hover {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: white;
+}
+
+.btn-outline-success:hover {
+  background-color: #198754;
+  border-color: #198754;
+  color: white;
+}
+
+.btn-outline-danger:hover {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: white;
+}
+
+/* Card styling */
+.card {
+  background-color: var(--bg-card);
+  border-color: #444;
+}
+
+.card-body {
+  background-color: var(--bg-card);
+}
+
+/* Alert styling */
+.alert {
+  background-color: rgba(26, 26, 26, 0.9);
+  border-color: #444;
+}
+
+/* Ensure dropdown menus inside responsive tables are visible */
+.table-responsive {
+  overflow: visible !important;
+}
+
+.table-responsive .dropdown-menu {
+  position: absolute;
+  inset: auto auto auto 0;
+  transform: none !important;
+  z-index: 1050;
+}
+
+/* Close button */
+.btn-close-white {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .modal-dialog.modal-xl {
+    margin: 1rem;
+    max-width: calc(100% - 2rem);
+  }
+  
+  .table-responsive {
+    font-size: 0.875rem;
+  }
+  
+  .btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+  }
+}
+
+/* Lightweight Code Editor */
+.code-editor {
+  display: flex;
+  border: 1px solid #333;
+  background-color: var(--bg-tertiary);
+  border-radius: 6px;
+  overflow: hidden;
+  min-height: 240px;
+}
+
+.code-editor-gutter {
+  background-color: #252525;
+  color: #9aa0a6;
+  padding: 8px 8px 8px 12px;
+  text-align: right;
+  user-select: none;
+  min-width: 3rem;
+  border-right: 1px solid #333;
+}
+
+.code-editor-line {
+  line-height: 1.5rem;
+  height: 1.5rem;
+}
+
+.code-editor-textarea {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #f8f8f2;
+  padding: 8px 12px;
+  font-family: "JetBrains Mono", "Fira Code", "Consolas", "Monaco", monospace;
+  font-size: 13px;
+  line-height: 1.5rem;
+  resize: vertical;
+}
+
+.code-editor-textarea::placeholder {
+  color: #6b7280;
+}

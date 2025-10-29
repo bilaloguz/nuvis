@@ -1,0 +1,83 @@
+/* Server Group Management Dark Theme Styles */
+
+.server-group-management {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.color-preview {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.table {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.table th {
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+.table td {
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.table-hover tbody tr:hover {
+  background-color: var(--bg-tertiary);
+}
+
+.modal-content {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+.modal-header {
+  background-color: var(--bg-tertiary);
+  border-bottom-color: var(--border-color);
+}
+
+.modal-footer {
+  background-color: var(--bg-tertiary);
+  border-top-color: var(--border-color);
+}
+
+.form-control {
+  background-color: var(--bg-primary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.form-control:focus {
+  background-color: var(--bg-primary);
+  border-color: var(--accent-primary);
+  color: var(--text-primary);
+  box-shadow: 0 0 0 0.2rem rgba(99, 102, 241, 0.25);
+}
+
+.form-control-color {
+  border-color: var(--border-color);
+}
+
+.form-label {
+  color: var(--text-primary);
+}
+
+.form-text {
+  color: var(--text-secondary);
+}
+
+.btn-close-white {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+.alert {
+  border-color: var(--border-color);
+}
+
+.badge {
+  font-weight: 500;
+}

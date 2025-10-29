@@ -1,0 +1,36 @@
+# Python
+backend/venv/
+__pycache__/
+*.pyc
+
+# Node/React
+frontend/node_modules/
+frontend/build/
+
+# Env and secrets
+.env
+*.env
+backend/.env
+frontend/.env
+secrets.json
+*.pem
+*.key
+
+# Databases and runtime state
+*.db
+backend/apscheduler_jobs.db
+
+# Logs
+*.log
+logs/
+
+# OS/editor
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Misc
+coverage/
+dist/
