@@ -8,22 +8,22 @@
 
 **Nuvis** (formerly biRun) is a distributed infrastructure automation and orchestration platform designed for DevOps teams and SysAdmins. It enables centralized management, monitoring, and execution of scripts across heterogeneous server environments (Linux & Windows) without installing agents.
 
-[cite_start]Unlike simple script runners, Nuvis features a powerful **Visual Workflow Builder (DAG)** capable of handling complex dependencies, conditional logic, and self-healing scenarios [cite: 329-330].
+Unlike simple script runners, Nuvis features a powerful **Visual Workflow Builder (DAG)** capable of handling complex dependencies, conditional logic, and self-healing scenarios.
 
 ---
 
 ## 📸 Visual Tour
 
 ### 1. The Command Center
-[cite_start]*Real-time system health, server status, and execution metrics at a glance.* [cite: 40-46]
+*Real-time system health, server status, and execution metrics at a glance.*
 <img src="docs/screenshots/03-main-dashboard.png" width="100%" alt="Nuvis Dashboard">
 
 ### 2. Visual Workflow Orchestration
-**The Core Power of Nuvis:** A Node-based Workflow Engine. [cite_start]Define dependencies, set failure policies (e.g., "If Node A fails, run Cleanup Node B"), and visualize the execution path [cite: 390-393].
+**The Core Power of Nuvis:** A Node-based Workflow Engine. Define dependencies, set failure policies (e.g., "If Node A fails, run Cleanup Node B"), and visualize the execution path.
 <img src="docs/screenshots/20-workflow-builder.png" width="100%" alt="Workflow Builder">
 
 ### 3. Live Remote Execution
-Interact with remote servers directly via the web interface. [cite_start]Supports real-time stdout/stderr streaming over WebSocket/SSE [cite: 253-258].
+Interact with remote servers directly via the web interface. Supports real-time stdout/stderr streaming over WebSocket/SSE.
 <img src="docs/screenshots/25-terminal-interface.png" width="100%" alt="Terminal View">
 
 ---
@@ -32,7 +32,7 @@ Interact with remote servers directly via the web interface. [cite_start]Support
 
 * **Agentless Architecture:** Connects to nodes via secure **SSH Tunnels** (Linux) or standard protocols, removing the need to install agents on target servers.
 * **Multi-Language Support:** Natively supports **Bash**, **PowerShell**, and **Python** scripts.
-* [cite_start]**Smart Scheduling:** Support for Cron expressions and Interval-based scheduling with "Trigger Tolerance" to handle missed execution windows [cite: 304-306, 500].
+* **Smart Scheduling:** Support for Cron expressions and Interval-based scheduling with "Trigger Tolerance" to handle missed execution windows.
 * **Virtual Timeouts:** Intelligent handling of infinite processes (like `ping -t`) with snapshot logic to prevent zombie processes.
 * **Audit & Security:** Immutable logs of every action and Role-Based Access Control (RBAC).
 
