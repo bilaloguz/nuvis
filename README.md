@@ -1,43 +1,71 @@
 # Nuvis (Infrastructure Orchestration Platform)
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)](https://www.python.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.68%2B-009688?logo=fastapi)](https://fastapi.tiangolo.com/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-High_Performance-009688?logo=fastapi)](https://fastapi.tiangolo.com/)
 [![React](https://img.shields.io/badge/React-18-61DAFB?logo=react)](https://reactjs.org/)
 [![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED?logo=docker)](https://www.docker.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-**Nuvis** is a distributed infrastructure automation and orchestration platform. It allows DevOps engineers and SysAdmins to manage, monitor, and execute complex script workflows across heterogeneous server environments (Linux & Windows) from a centralized interface.
+**Nuvis** is a distributed infrastructure automation and orchestration platform designed for DevOps teams and SysAdmins. It enables centralized management, monitoring, and execution of scripts across heterogeneous server environments (Linux & Windows) without installing agents.
 
-Unlike simple script runners, Nuvis features a **Visual Workflow Builder (DAG)** capable of handling conditional logic, group failure policies, and self-healing scenarios.
+[cite_start]Unlike simple script runners, Nuvis features a powerful **Visual Workflow Builder (DAG)** capable of handling complex dependencies, conditional logic, and self-healing scenarios [cite: 329-330].
 
-![Nuvis Dashboard](docs/dashboard.png)
-[cite_start]*(Screenshot: Real-time System & Server Health Dashboard)* [cite: 42-46]
+---
+
+## 📸 Visual Tour
+
+### 1. The Command Center
+[cite_start]*Real-time system health, server status, and execution metrics at a glance.* [cite: 40-46]
+<img src="docs/screenshots/dashboard.png" width="100%" alt="Nuvis Dashboard">
+
+### 2. Visual Workflow Orchestration
+**The Core Power of Nuvis:** A Node-based Workflow Engine. [cite_start]Define dependencies, set failure policies (e.g., "If Node A fails, run Cleanup Node B"), and visualize the execution path [cite: 390-393].
+<img src="docs/screenshots/workflow_builder.png" width="100%" alt="Workflow Builder">
+
+### 3. Live Remote Execution
+Interact with remote servers directly via the web interface. [cite_start]Supports real-time stdout/stderr streaming over WebSocket/SSE [cite: 253-258].
+<img src="docs/screenshots/terminal_output.png" width="100%" alt="Terminal View">
 
 ---
 
 ## 🚀 Key Features
 
-### 1. Visual Workflow Orchestration
-Build complex automation pipelines using a node-based Drag-and-Drop editor.
-* [cite_start]**Conditional Logic:** Define "On Success" and "On Failure" paths [cite: 392-393].
-* [cite_start]**Group Failure Policies:** Configure whether a workflow fails if *any* node fails or only if *all* nodes fail[cite: 378].
-* [cite_start]**Retry Logic:** Automatic retries with configurable intervals for transient network issues[cite: 367].
-
-### 2. Distributed Remote Execution
-* **Agentless:** Connects to target nodes via secure **SSH Tunnels** (Linux) or WinRM/SSH (Windows).
+* [cite_start]**Agentless Architecture:** Connects to nodes via secure **SSH Tunnels** (Linux) or standard protocols, removing the need to install agents on target servers[cite: 105].
 * [cite_start]**Multi-Language Support:** Natively supports **Bash**, **PowerShell**, and **Python** scripts[cite: 229].
-* [cite_start]**Virtual Terminal:** Web-based interactive terminal for ad-hoc commands on remote servers [cite: 153-155].
+* [cite_start]**Smart Scheduling:** Support for Cron expressions and Interval-based scheduling with "Trigger Tolerance" to handle missed execution windows [cite: 304-306, 500].
+* [cite_start]**Virtual Timeouts:** Intelligent handling of infinite processes (like `ping -t`) with snapshot logic to prevent zombie processes[cite: 496].
+* [cite_start]**Audit & Security:** Immutable logs of every action and Role-Based Access Control (RBAC)[cite: 453, 530].
 
-### 3. Enterprise-Grade Observability
-* [cite_start]**Health Checks:** Real-time monitoring of CPU, RAM, and Disk usage across the server fleet[cite: 130].
-* [cite_start]**Audit Logging:** Immutable logs of every user action (who executed what, when, and where)[cite: 454].
-* [cite_start]**Virtual Timeouts:** Smart handling of infinite processes (e.g., `ping -t`) with "snapshot" logic to prevent zombie processes[cite: 235].
+---
+
+## 🔍 Deep Dive (Gallery)
+
+<details>
+<summary><strong>Click to view the User Interface Gallery</strong></summary>
+<br>
+
+| Server Management | Script Marketplace |
+|:---:|:---:|
+| <img src="docs/screenshots/server_list.png" width="400"> | <img src="docs/screenshots/marketplace.png" width="400"> |
+| [cite_start]*Manage Inventory & Keys* [cite: 84] | [cite_start]*Import Community Scripts* [cite: 263] |
+
+| Scheduling (Cron) | Audit Logs |
+|:---:|:---:|
+| <img src="docs/screenshots/schedule_form.png" width="400"> | <img src="docs/screenshots/audit_logs.png" width="400"> |
+| [cite_start]*Complex Time Definitions* [cite: 304] | [cite_start]*Security Tracking* [cite: 453] |
+
+| Settings & Config | Script Editor |
+|:---:|:---:|
+| <img src="docs/screenshots/settings.png" width="400"> | <img src="docs/screenshots/script_editor.png" width="400"> |
+| [cite_start]*System Tuning* [cite: 474] | [cite_start]*IDE with Syntax Highlighting* [cite: 231] |
+
+</details>
 
 ---
 
 ## 🏗 Architecture
 
-Nuvis follows a **Centralized Orchestrator Pattern** to ensure data integrity and scalable execution.
+Nuvis follows a **Centralized Orchestrator Pattern** to ensure data integrity.
 
 ```mermaid
 graph TD
