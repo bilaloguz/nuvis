@@ -6,7 +6,7 @@
 [![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED?logo=docker)](https://www.docker.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-**Nuvis** (formerly biRun) is a distributed infrastructure automation and orchestration platform designed for DevOps teams and SysAdmins. It enables centralized management, monitoring, and execution of scripts across heterogeneous server environments (Linux & Windows) without installing agents.
+**Nuvis** is a distributed infrastructure automation and orchestration platform designed for DevOps teams and SysAdmins. It enables centralized management, monitoring, and execution of scripts across heterogeneous server environments (Linux & Windows) without installing agents.
 
 Unlike simple script runners, Nuvis features a powerful **Visual Workflow Builder (DAG)** capable of handling complex dependencies, conditional logic, and self-healing scenarios.
 
